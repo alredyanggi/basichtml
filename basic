@@ -1,0 +1,136 @@
+<!DOCTYPE html>	
+<html lang="en">	
+  <head>	
+    <meta charset="UTF-8" />	
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />	
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />	
+    <title>Cloth Diapers</title>	
+    <style>	
+      body {	
+        background: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);	
+      }	
+	
+      h1 {	
+        width: 300px;	
+        margin: 0 auto;	
+        background-color: #c37857;	
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;	
+        text-align: center;	
+        font-size: 50px;	
+      }	
+	
+      h2 {	
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",	
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;	
+        text-align: center;	
+        font-weight: 100px;	
+      }	
+	
+      p {	
+        padding: 20px;	
+        border: 1px solid blue;	
+        font-size: 25px;	
+        text-align: center;	
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;	
+      }	
+	
+      img {	
+        display: block;	
+        margin: 0 auto;	
+        border-radius: 5px;	
+        width: 400px;	
+      }	
+	
+      button {	
+        display: block;	
+        margin: 0 auto;	
+        background: #c37857;	
+        color: white;	
+        font-size: 20px;	
+        padding: 10px 20px;	
+        border-radius: 15px;	
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);	
+      }	
+	
+      button:hover {	
+        cursor: pointer;	
+        transition: ease-in-out, 200ms;	
+      }	
+	
+      span {	
+        padding: 200px;	
+        margin: 0 auto;	
+        text-align: center;	
+        font-size: 20px;	
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;	
+      }	
+	
+      .click-here {	
+        display: block;	
+        margin-top: 20px;	
+        text-decoration: none;	
+      }	
+      .page {	
+        max-width: 700px;	
+        margin: 0 auto;	
+      }	
+      .click-here:hover {	
+        text-decoration: underline;	
+      }	
+    </style>	
+  </head>	
+  <body>	
+    <h1>Cloth Diapers</h1>	
+    <h2>	
+      <em>Reusable diaper for a better future </em>	
+    </h2>	
+    <hr />	
+    <img	
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/861/original/14.png?1673186000"	
+      alt="Diapers"	
+    />	
+    <div class="page">	
+      <p>	
+        Hi! I'm Andri, working mom based in Birmingham, England. 	
+        I'm passionate of living greener, more sustainable and minimalist lifestyle. Reusable diapers is one way I share this passion. 	
+        Using reusable diaper with my daughter has turned out to be a truly gratifying experience. 	
+        Every single day i know that i am doing something that makes my parenting footprint on our earth a little bit softer. I collaborate with my friend to start our own reusable diaper brand, 	
+        and we started IHANA back in 2020. As my final project at Shecodes, I can promise there will be no hard sales here, 	
+        i wont be telling you which nappies your baby needs, i won't share the brands i have and love. 	
+        That's for you and your baby to explore together, how joyful a journey it will be. 	
+        <br />	
+        <a	
+          href="https://shopee.co.id/ihana.nappy?smtt=0.0.9"	
+          target="_blank"	
+          class="click-here"	
+        >	
+          Click here to find out if we're right for you!	
+        </a>	
+      </p>	
+      <button>Enquire here!</button>	
+      <br />	
+      <span> 👩‍💻Website built by Andriani Sarastiti👩‍💻 </span>	
+    </div>	
+	
+    <script>	
+      function query() {	
+        let Question = prompt("Have you use Reusable nappy before");	
+        let email = prompt("What is your email address?");	
+        let Diapers = prompt("do you have cloth nappy");	
+	
+        if (Diapers === "yes") {	
+          alert(	
+            "Great, " +	
+              Question +	
+              "! We have reusable diaper products available and will be in touch😁"	
+          );	
+        } else {	
+          alert("No problem, " + Question + "! Let us know when you're ready.🥳");	
+        }	
+      }	
+	
+      let button = document.querySelector("button");	
+      button.addEventListener("click", query);	
+    </script>	
+  </body>	
+</html>	
